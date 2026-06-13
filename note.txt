@@ -1,0 +1,13 @@
+To create new project
+nest new project-name
+
+Turn to mono repo from standard mode
+1 Microservice
+nest generate app logging-service
+
+2nd Microservice
+nest generate app riders 
+
+To start the microservice
+nest start riders
+nest start logging-service

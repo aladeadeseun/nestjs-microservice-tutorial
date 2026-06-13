@@ -1,0 +1,15 @@
+version : '3.1'
+
+# MongoDB, Postgres, Redis, Elasticsearch, Kibana, Mysql, Postgres
+#define all images from where to 'generate or instantiate' a container
+services:
+  #container name
+  mongo:
+    #from image
+    image: mongo
+    #on crash restart automatically
+    restart: always
+    #Define environment variable
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME: root
+      - MONGO_INITDB_ROOT_PASSWORD: p@s$wOrd
