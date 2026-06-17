@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { RidersService } from './riders.service';
 
-@Controller()
+@Controller('rider-coordinates')
 export class RidersController {
   constructor(private readonly ridersService: RidersService) {}
 

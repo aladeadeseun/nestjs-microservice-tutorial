@@ -8,6 +8,18 @@ nest generate app logging-service
 2nd Microservice
 nest generate app riders 
 
-To start the microservice
-nest start riders
+To start the nestjs  microservice
+nest start riders w
 nest start logging-service
+
+Starting the microservice
+docker compose up -d
+
+Check the environment inside the container:
+docker exec -it uber-service-mongo-1 env | grep MONGO
+
+
+To stop the microservice
+docker compose down
+
+docker compose -f 'docker-compose.yml' up -d --build

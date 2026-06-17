@@ -10,6 +10,33 @@
   "monorepo": true,
   "root": "apps/uber-service",
   "projects": {
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "apps/api-gateway": {
+      "type": "application",
+      "root": "apps/apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "logging": {
+      "type": "application",
+      "root": "apps/logging",
+      "entryFile": "main",
+      "sourceRoot": "apps/logging/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/logging/tsconfig.app.json"
+      }
+    },
     "logging-service": {
       "type": "application",
       "root": "apps/logging-service",
@@ -17,6 +44,15 @@
       "sourceRoot": "apps/logging-service/src",
       "compilerOptions": {
         "tsConfigPath": "apps/logging-service/tsconfig.app.json"
+      }
+    },
+    "order-service": {
+      "type": "application",
+      "root": "apps/order-service",
+      "entryFile": "main",
+      "sourceRoot": "apps/order-service/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/order-service/tsconfig.app.json"
       }
     },
     "riders": {
